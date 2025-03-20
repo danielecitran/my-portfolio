@@ -3,29 +3,20 @@ export default function ImpressumPage() {
         <main className="container mx-auto px-4 py-8">
             <h1 className="text-3xl font-bold mb-6">Impressum</h1>
             <div className="prose max-w-none">
-                <h2>Angaben gemäß § 5 TMG</h2>
+                <h2>Impressum</h2>
                 <p>
-                    Name
+                    Daniele Citran
                     <br />
-                    Straße
+                    Pfruenhofstrasse 54
                     <br />
-                    PLZ, Ort
+                    8910, Affoltern am Albis
                 </p>
 
                 <h2>Kontakt</h2>
                 <p>
-                    Telefon:
+                    Telefon: +41 76 801 07 07
                     <br />
-                    E-Mail:
-                </p>
-
-                <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-                <p>
-                    Name
-                    <br />
-                    Straße
-                    <br />
-                    PLZ, Ort
+                    E-Mail: daniele.citran@student.ksh.ch
                 </p>
             </div>
         </main>
