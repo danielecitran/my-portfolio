@@ -2,6 +2,7 @@ import type React from "react"
 import Link from "next/link"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import Header from "../components/header"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,23 +19,7 @@ export default function RootLayout({
     return (
         <html lang="de">
         <body className={inter.className}>
-        <nav className="bg-slate-800 text-white p-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <div className="font-bold text-xl">My Website</div>
-                <ul className="flex space-x-4">
-                    <li>
-                        <Link href="/" className="hover:underline">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="./projects" className="hover:underline">
-                            Projects
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <Header />
 
         {children}
 
