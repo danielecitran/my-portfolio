@@ -2,7 +2,7 @@ import type React from "react"
 import Link from "next/link"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import Header from "../components/header"
+import Header from "@/app/components/header"
 
 const inter = Inter({ subsets: ["latin"] })
 
