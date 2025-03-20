@@ -11,9 +11,9 @@ export default function Header() {
             <div className="container mx-auto flex justify-center">
                 <nav className="bg-[#1a1025] rounded-full px-2 py-1 flex items-center">
                     <Link
-                        href="./home"
+                        href="./"
                         className={`px-6 py-2 rounded-full text-white font-medium transition-colors ${
-                            pathname === "./home" ? "bg-[#2a2535]" : "hover:bg-[#2a2535]/50"
+                            pathname === "./" ? "bg-[#2a2535]" : "hover:bg-[#2a2535]/50"
                         }`}
                     >
                         Home
