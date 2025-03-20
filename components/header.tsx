@@ -21,7 +21,7 @@ export default function Header() {
                     <Link
                         href="../app/projects"
                         className={`px-6 py-2 rounded-full text-white font-medium transition-colors ${
-                            pathname === "/projects" ? "bg-[#2a2535]" : "hover:bg-[#2a2535]/50"
+                            pathname === "../app/projects" ? "bg-[#2a2535]" : "hover:bg-[#2a2535]/50"
                         }`}
                     >
                         Projects
