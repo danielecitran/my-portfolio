@@ -52,7 +52,7 @@ export default function Header() {
                             {pathname === "/" && (
                                 <motion.div
                                     className="h-[2px] w-8 mt-0.5"
-                                    style={{ backgroundColor: "hsl(215.4, 16.3%, 46.9%)" }}
+                                    style={{ backgroundColor: "hsl(214.3 31.8% 91.4%)" }}
                                     initial={{ opacity: 0, width: 0 }}
                                     animate={{ opacity: 1, width: 32 }}
                                     transition={{ duration: 0.3, delay: 0.2 }}
@@ -70,7 +70,7 @@ export default function Header() {
                             {pathname === "/projects" && (
                                 <motion.div
                                     className="h-[2px] w-8 mt-0.5"
-                                    style={{ backgroundColor: "hsl(215.4, 16.3%, 46.9%)" }}
+                                    style={{ backgroundColor: "hsl(214.3 31.8% 91.4%)" }}
                                     initial={{ opacity: 0, width: 0 }}
                                     animate={{ opacity: 1, width: 32 }}
                                     transition={{ duration: 0.3, delay: 0.2 }}
