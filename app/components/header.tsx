@@ -17,38 +17,45 @@ export default function Header() {
     return (
         <header className="bg-[#0a0014] py-4">
             <div className="container mx-auto flex justify-center">
-                <nav className="bg-transparent border border-white/70 rounded-full p-1.5 flex items-center relative">
+                <nav className="bg-transparent border border-white/70 rounded-full flex items-center relative h-10 px-1.5 py-1">
                     {/* Animated background indicator */}
                     <motion.div
-                        className="absolute w-24 h-8 bg-[#3a3545] rounded-full z-0"
-                        animate={{ x: activeTab * 104 }} // 104px = button width (96px) + margin (8px)
+                        className="absolute bg-[#3a3545] rounded-full z-0"
+                        initial={false}
+                        animate={{
+                            x: activeTab * 100,
+                        }}
                         transition={{
                             type: "spring",
                             stiffness: 300,
                             damping: 30,
                             duration: 0.5,
                         }}
+                        style={{
+                            width: "100px",
+                            height: "32px",
+                            left: "4px",
+                        }}
                     />
 
-                    {/* Home button */}
-                    <div className="w-24 h-8 relative mx-1 z-10">
+                    {/* Navigation buttons container */}
+                    <div className="flex items-center z-10 relative">
+                        {/* Home button */}
                         <Link
                             href="./"
-                            className="absolute inset-0 flex justify-center items-center rounded-full text-white text-sm font-medium"
+                            className="w-[100px] h-8 flex justify-center items-center text-white text-sm font-medium"
                             onClick={() => setActiveTab(0)}
                         >
-                            <span className="relative z-10">Home</span>
+                            Home
                         </Link>
-                    </div>
 
-                    {/* Projects button */}
-                    <div className="w-24 h-8 relative mx-1 z-10">
+                        {/* Projects button */}
                         <Link
                             href="./projects"
-                            className="absolute inset-0 flex justify-center items-center rounded-full text-white text-sm font-medium"
+                            className="w-[100px] h-8 flex justify-center items-center text-white text-sm font-medium"
                             onClick={() => setActiveTab(1)}
                         >
-                            <span className="relative z-10">Projects</span>
+                            Projects
                         </Link>
                     </div>
                 </nav>
