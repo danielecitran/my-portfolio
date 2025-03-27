@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <footer className="relative mt-auto">
-            {/* Smooth curved edge */}
+            {/* Wellige Kante */}
             <div className="absolute left-0 right-0 -top-24 h-24 w-full overflow-hidden">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -20,13 +20,13 @@ export default function Footer() {
 
             {/* Footer content */}
             <div className="bg-black py-8 px-6">
-                <div className="container mx-auto flex justify-between items-center">
-                    <div className="text-white text-sm">© 2025 Daniele Citran</div>
-                    <div className="flex space-x-6">
-                        <Link href="./impressum" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+                <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <div className="text-white text-sm font-light">© 2025 Daniele Citran</div>
+                    <div className="flex space-x-8">
+                        <Link href="./impressum" className="text-gray-400 hover:text-white text-sm transition-all duration-300 hover:translate-y-[-2px]">
                             Impressum
                         </Link>
-                        <Link href="./datenschutz" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+                        <Link href="./datenschutz" className="text-gray-400 hover:text-white text-sm transition-all duration-300 hover:translate-y-[-2px]">
                             Datenschutz
                         </Link>
                     </div>

@@ -5,17 +5,26 @@ import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 
+/**
+ * Header component that provides navigation between Home and Projects pages
+ * Features an animated sliding indicator and underline effects
+**/
 interface HeaderProps {}
 
 export default function Header({}: HeaderProps) {
+    // Get current route path for active tab tracking
     const pathname = usePathname()
+    // Set initial active tab based on current path (0 for Home, 1 for Projects)
     const [activeTab, setActiveTab] = useState<number>(pathname === "/projects" ? 1 : 0)
 
+    // Update active tab when pathname changes
     useEffect(() => {
         setActiveTab(pathname === "/projects" ? 1 : 0)
     }, [pathname])
 
+    // Constants for styling and animations
     const BUTTON_WIDTH = 100
+    // Styles for the sliding background indicator
     const INDICATOR_STYLES = {
         width: `${BUTTON_WIDTH}px`,
         height: "32px",
@@ -27,11 +36,14 @@ export default function Header({}: HeaderProps) {
 
     return (
         <header className="bg-transparent py-4 sticky top-0 z-50">
+            {/* Main navigation container with backdrop blur effect */}
             <div 
                 className="container mx-auto flex justify-center"
                 suppressHydrationWarning
             >
+                {/* Navigation bar with glass morphism effect */}
                 <nav className="bg-gray-900/20 backdrop-blur-xl rounded-full flex items-center relative h-10 px-2 py-1 w-[208px] shadow-[0_8px_32px_-8px_rgba(15,23,42,0.25)] hover:shadow-[0_8px_32px_-4px_rgba(15,23,42,0.3)] transition-all duration-300">
+                    {/* Animated sliding indicator */}
                     <motion.div
                         className="absolute rounded-full z-0"
                         initial={false}
@@ -48,10 +60,12 @@ export default function Header({}: HeaderProps) {
                         suppressHydrationWarning
                     />
 
+                    {/* Navigation links container */}
                     <div 
                         className="flex items-center z-10 relative space-x-0"
                         suppressHydrationWarning
                     >
+                        {/* Home link with animated underline effect */}
                         <Link
                             href="/"
                             className="w-[100px] h-8 inline-flex flex-col items-center justify-center text-slate-100/95 text-sm font-medium transition-colors duration-200 hover:text-white"
