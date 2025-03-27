@@ -11,6 +11,33 @@ import { useEffect, useState } from "react"
 **/
 interface HeaderProps {}
 
+const ExternalLinkIcon = () => (
+  <svg 
+    width="12" 
+    height="12" 
+    viewBox="0 0 12 12" 
+    fill="none"
+    aria-hidden="true"
+  >
+    <path 
+      d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" 
+      fill="currentColor"
+    />
+  </svg>
+);
+
+const GithubLink = () => (
+  <a
+    href="https://github.com/danielecitran"
+    className="text-primary hover:text-hover flex items-center gap-1 text-sm transition-colors duration-200"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>Github</span>
+    <ExternalLinkIcon />
+  </a>
+);
+
 export default function Header({}: HeaderProps) {
     // Get current route path for active tab tracking
     const pathname = usePathname()
@@ -38,7 +65,7 @@ export default function Header({}: HeaderProps) {
         <header className="bg-transparent py-4 sticky top-0 z-50">
             {/* Main navigation container with backdrop blur effect */}
             <div 
-                className="container mx-auto flex justify-center"
+                className="container mx-auto flex justify-center relative"
                 suppressHydrationWarning
             >
                 {/* Navigation bar with glass morphism effect */}
@@ -101,6 +128,19 @@ export default function Header({}: HeaderProps) {
                         </Link>
                     </div>
                 </nav>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                    <a
+                        href="https://github.com/danielecitran"
+                        className="px-4 py-2 text-gray-800 hover:text-gray-900 inline-flex items-center gap-2 text-base font-medium transition-all duration-300 rounded-full hover:bg-gray-900/10 hover:backdrop-blur-md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div className="flex items-center gap-2 underline decoration-[1.5px] underline-offset-4">
+                            <span>Github</span>
+                            <ExternalLinkIcon />
+                        </div>
+                    </a>
+                </div>
             </div>
         </header>
     )
