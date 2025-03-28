@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
     return (
-        <footer className="relative mt-auto">
+        <footer className="relative mt-32">
             {/* Wellige Kante */}
             <div className="absolute left-0 right-0 -top-24 h-24 w-full overflow-hidden">
                 <svg
@@ -34,5 +34,5 @@ export default function Footer() {
             </div>
         </footer>
     )
-}
+} 
 
