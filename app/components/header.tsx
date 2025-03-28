@@ -98,10 +98,10 @@ export default function Header({}: HeaderProps) {
                             className="w-[100px] h-8 inline-flex flex-col items-center justify-center text-slate-100/95 text-sm font-medium transition-colors duration-200 hover:text-white"
                             onClick={() => setActiveTab(0)}
                         >
-                            <span className="mb-0.5 translate-x-[-2px]">Home</span>
+                            <span className="mb-0.5 translate-x-[-5px]">Home</span>
                             {pathname === "/" && (
                                 <motion.div
-                                    className="h-[2px] w-8 translate-x-[-2px]"
+                                    className="h-[2px] w-8 translate-x-[-5px]"
                                     style={{ backgroundColor: "rgba(241, 245, 249, 0.95)" }}
                                     initial={{ opacity: 0, width: 0 }}
                                     animate={{ opacity: 1, width: 32 }}
