@@ -65,7 +65,7 @@ export default function Header({}: HeaderProps) {
         <header className="bg-transparent py-4 sticky top-0 z-50">
             {/* Main navigation container with backdrop blur effect */}
             <div 
-                className="container mx-auto flex justify-center relative"
+                className="container mx-auto flex flex-col sm:flex-row justify-center relative"
                 suppressHydrationWarning
             >
                 {/* Navigation bar with glass morphism effect */}
@@ -128,7 +128,7 @@ export default function Header({}: HeaderProps) {
                         </Link>
                     </div>
                 </nav>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                <div className="mt-4 sm:mt-0 sm:absolute sm:right-4 sm:top-1/2 sm:-translate-y-1/2">
                     <a
                         href="https://github.com/danielecitran"
                         className="px-4 py-2 text-gray-800 hover:text-gray-900 inline-flex items-center gap-2 text-base font-medium transition-all duration-300 rounded-full hover:bg-gray-900/10 hover:backdrop-blur-md"
