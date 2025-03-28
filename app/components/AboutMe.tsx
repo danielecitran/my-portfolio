@@ -62,7 +62,6 @@ export default function AboutMe() {
                     {/* Left Column - Profile */}
                     <div className="tilt-card bg-[#fafafa] rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.1)] hover:bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
                         <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 via-sky-500 to-sky-600 mb-6 relative transform hover:rotate-6 transition-all duration-300 shadow-lg">
-                            {/* Hier können Sie später Ihr Profilbild einfügen */}
                             <div className="absolute inset-0 flex items-center justify-center text-4xl animate-float">
                                 👨‍💻
                             </div>
@@ -132,7 +131,7 @@ export default function AboutMe() {
                                 <h4 className="font-medium">Informatikmittelschule</h4>
                                 <p className="text-sm text-gray-600">Zürich</p>
                                 <div className="mt-2 flex items-center">
-                                    <span className="text-xs bg-sky-100/80 backdrop-blur-sm text-sky-800 px-2 py-1 rounded-full border border-sky-200/50">
+                                    <span className="text-xs bg-sky-100 text-sky-800 px-2 py-1 rounded-full border border-sky-200">
                                         2023 - 2027
                                     </span>
                                 </div>
@@ -141,8 +140,8 @@ export default function AboutMe() {
                                 <h4 className="font-medium">Verschiedene Zertifikate</h4>
                                 <p className="text-sm text-gray-600">Online Kurse</p>
                                 <div className="mt-2 flex flex-wrap gap-2">
-                                    <span className="text-xs bg-purple-100/80 backdrop-blur-sm text-purple-800 px-2 py-1 rounded-full border border-purple-200/50">Web Development</span>
-                                    <span className="text-xs bg-blue-100/80 backdrop-blur-sm text-blue-800 px-2 py-1 rounded-full border border-blue-200/50">UI/UX Design</span>
+                                    <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full border border-purple-200">Web Development</span>
+                                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full border border-blue-200">UI/UX Design</span>
                                 </div>
                             </div>
                         </div>

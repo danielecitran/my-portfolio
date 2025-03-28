@@ -23,7 +23,29 @@ export default function Home() {
 
     if (isLoading) {
         return (
-            <div className="min-h-screen bg-white">
+            <div className="min-h-screen bg-white relative overflow-hidden">
+                {/* Geometrische Hintergrund-Elemente */}
+                <div className="absolute inset-0 -z-10">
+                    {/* Horizontale Linien */}
+                    <div className="absolute inset-0" style={{
+                        backgroundImage: 'linear-gradient(to right, #e5e7eb 1px, transparent 1px)',
+                        backgroundSize: '4rem 4rem',
+                        opacity: '0.15'
+                    }}></div>
+                    
+                    {/* Vertikale Linien */}
+                    <div className="absolute inset-0" style={{
+                        backgroundImage: 'linear-gradient(to bottom, #e5e7eb 1px, transparent 1px)',
+                        backgroundSize: '4rem 4rem',
+                        opacity: '0.15'
+                    }}></div>
+
+                    {/* Geometrische Formen */}
+                    <div className="absolute top-20 left-10 w-32 h-32 border border-sky-100 rounded-lg rotate-12 opacity-20"></div>
+                    <div className="absolute bottom-20 right-10 w-24 h-24 border border-sky-100 rounded-full opacity-20"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-sky-100 rotate-45 opacity-20"></div>
+                </div>
+
                 {/* Header Skeleton */}
                 <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(50vh-8rem)]">
                     <div className="text-center space-y-4">
