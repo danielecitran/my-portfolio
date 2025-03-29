@@ -23,11 +23,11 @@ export default function Footer() {
                 <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
                     <div className="text-white text-sm font-light">© 2025 Daniele Citran</div>
                     <div className="flex space-x-8">
-                        <Link href="./impressum" className="text-gray-400 hover:text-white text-sm transition-all duration-300 hover:translate-y-[-2px]">
-                            Impressum
+                        <Link href="/" className="text-gray-400 hover:text-white text-sm transition-all duration-300 hover:translate-y-[-2px]">
+                            Home
                         </Link>
-                        <Link href="./datenschutz" className="text-gray-400 hover:text-white text-sm transition-all duration-300 hover:translate-y-[-2px]">
-                            Datenschutz
+                        <Link href="/projects" className="text-gray-400 hover:text-white text-sm transition-all duration-300 hover:translate-y-[-2px]">
+                            Projekte
                         </Link>
                     </div>
                 </div>
