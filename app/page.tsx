@@ -8,12 +8,20 @@ export default function Home() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setIsLoading(true);
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
+        // Prüfe, ob dies der erste Seitenaufruf ist
+        const isFirstVisit = !sessionStorage.getItem('hasVisited');
+        
+        if (isFirstVisit) {
+            setIsLoading(true);
+            const timer = setTimeout(() => {
+                setIsLoading(false);
+                sessionStorage.setItem('hasVisited', 'true');
+            }, 1000);
 
-        return () => clearTimeout(timer);
+            return () => clearTimeout(timer);
+        } else {
+            setIsLoading(false);
+        }
     }, []);
 
     const handleClick = () => {
