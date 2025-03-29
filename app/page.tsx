@@ -125,7 +125,7 @@ export default function Home() {
             <main className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(50vh-8rem)]">
                 <div className="text-center">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 relative animate-title">
-                        Hi, I&apos;m <span 
+                        Hallo, ich bin <span 
                             className="inline-block bg-gradient-to-br from-sky-400 via-sky-400 to-sky-600 text-transparent bg-clip-text hover:from-sky-300 hover:via-sky-400 hover:to-sky-500 transition-all duration-500 hover:scale-105 transform cursor-pointer hover:-translate-y-1"
                             onClick={handleClick}
                         >
@@ -138,7 +138,7 @@ export default function Home() {
                         )}
                     </h1>
                     <h2 className="text-2xl md:text-3xl text-gray-700 mt-4 animate-subtitle">
-                        IT Student at IMS Hottingen
+                        Informatikmittelschüler an der IMS Hottingen
                     </h2>
                 </div>
             </main>

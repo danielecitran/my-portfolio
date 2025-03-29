@@ -123,31 +123,41 @@ export default function AboutMe() {
                         </div>
                     </div>
 
-                    {/* Education */}
+                    {/* SCHULBILDUNG */}
                     <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
-                        <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Ausbildung</h3>
+                        <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Schulbildung</h3>
                         <div className="space-y-4">
                             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
                                 <h4 className="font-medium">Informatikmittelschule</h4>
-                                <p className="text-sm text-gray-600">Zürich</p>
+                                <p className="text-sm text-gray-600">Hottingen</p>
                                 <div className="mt-2 flex items-center">
                                     <span className="text-xs bg-sky-100 text-sky-800 px-2 py-1 rounded-full border border-sky-200">
-                                        2023 - 2027
+                                        2023 - Heute
                                     </span>
                                 </div>
                             </div>
                             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
-                                <h4 className="font-medium">Verschiedene Zertifikate</h4>
-                                <p className="text-sm text-gray-600">Online Kurse</p>
-                                <div className="mt-2 flex flex-wrap gap-2">
-                                    <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full border border-purple-200">Web Development</span>
-                                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full border border-blue-200">UI/UX Design</span>
+                                <h4 className="font-medium">Sekundarschule Niveau A</h4>
+                                <p className="text-sm text-gray-600">Affoltern am Albis</p>
+                                <div className="mt-2 flex items-center">
+                                    <span className="text-xs bg-sky-100 text-sky-800 px-2 py-1 rounded-full border border-sky-200">
+                                        2020 - 2023
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
+                                <h4 className="font-medium">Primarschule</h4>
+                                <p className="text-sm text-gray-600">Affoltern am Albis</p>
+                                <div className="mt-2 flex items-center">
+                                    <span className="text-xs bg-sky-100 text-sky-800 px-2 py-1 rounded-full border border-sky-200">
+                                        2014 - 2020
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Interests */}
+                    {/* INTERESSEN */}
                     <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Interessen</h3>
                         <div className="space-y-3">

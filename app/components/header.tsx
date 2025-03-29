@@ -140,7 +140,7 @@ export default function Header({}: HeaderProps) {
                                 className="w-[100px] h-8 inline-flex flex-col items-center justify-center text-slate-100/95 text-sm font-medium transition-colors duration-200 hover:text-white"
                                 onClick={() => setActiveTab(1)}
                             >
-                                <span className="mb-0.5 translate-x-[-2px]">Projects</span>
+                                <span className="mb-0.5 translate-x-[-2px]">Projekte</span>
                                 {pathname === "/projects" && (
                                     <motion.div
                                         className="h-[2px] w-8 translate-x-[-2px]"
