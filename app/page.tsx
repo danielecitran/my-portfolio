@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import AboutMe from './components/AboutMe'
+import AboutMe from './components/aboutMe';
 
 export default function Home() {
     const [showWave, setShowWave] = useState(false);
@@ -124,7 +124,7 @@ export default function Home() {
         <div className="min-h-screen bg-white">
             <main className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(50vh-8rem)]">
                 <div className="text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 relative">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4 relative animate-title">
                         Hi, I&apos;m <span 
                             className="inline-block bg-gradient-to-br from-sky-400 via-sky-400 to-sky-600 text-transparent bg-clip-text hover:from-sky-300 hover:via-sky-400 hover:to-sky-500 transition-all duration-500 hover:scale-105 transform cursor-pointer hover:-translate-y-1"
                             onClick={handleClick}
@@ -137,7 +137,7 @@ export default function Home() {
                             </span>
                         )}
                     </h1>
-                    <h2 className="text-2xl md:text-3xl text-gray-700 mt-4">
+                    <h2 className="text-2xl md:text-3xl text-gray-700 mt-4 animate-subtitle">
                         IT Student at IMS Hottingen
                     </h2>
                 </div>
@@ -172,6 +172,38 @@ export default function Home() {
                     100% {
                         opacity: 0;
                         transform: translateY(-10px);
+                    }
+                }
+
+                .animate-title {
+                    animation: titleAnimation 0.8s ease-out forwards;
+                    opacity: 0;
+                }
+
+                .animate-subtitle {
+                    animation: subtitleAnimation 0.8s ease-out 0.3s forwards;
+                    opacity: 0;
+                }
+
+                @keyframes titleAnimation {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px) scale(0.95);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
+                    }
+                }
+
+                @keyframes subtitleAnimation {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px) scale(0.95);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
                     }
                 }
 
