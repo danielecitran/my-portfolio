@@ -60,7 +60,7 @@ export default function AboutMe() {
                 {/* Hero Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Column - Profile */}
-                    <div className="tilt-card bg-[#fafafa] rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.1)] hover:bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
                         <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 via-sky-500 to-sky-600 mb-6 relative transform hover:rotate-6 transition-all duration-300 shadow-lg">
                             <div className="absolute inset-0 flex items-center justify-center text-4xl animate-float">
                                 👨‍💻
@@ -83,7 +83,7 @@ export default function AboutMe() {
                     </div>
 
                     {/* Right Column - About */}
-                    <div className="tilt-card bg-[#fafafa] rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.1)] hover:bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
                         <h2 className="text-3xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Über mich</h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Ich bin ein leidenschaftlicher Informatikmittelschüler aus Zürich, der sich für moderne Webtechnologien und Softwareentwicklung begeistert.
@@ -103,7 +103,7 @@ export default function AboutMe() {
                 {/* Skills Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                     {/* Technologies */}
-                    <div className="tilt-card bg-[#fafafa] rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.1)] hover:bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Technologien</h3>
                         <div className="grid grid-cols-2 gap-3">
                             {[
@@ -115,7 +115,7 @@ export default function AboutMe() {
                                 { name: 'Git', icon: '📦' }
                             ].map((tech) => (
                                 <span key={tech.name} 
-                                    className="bg-white rounded-full px-3 py-2 text-sm text-gray-600 flex items-center gap-2 transform hover:scale-105 transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] cursor-default border border-[#f0f0f0]">
+                                    className="bg-white/80 backdrop-blur-sm rounded-full px-3 py-2 text-sm text-gray-600 flex items-center gap-2 transform hover:scale-105 transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] cursor-default border border-sky-100/30">
                                     <span>{tech.icon}</span>
                                     {tech.name}
                                 </span>
@@ -124,10 +124,10 @@ export default function AboutMe() {
                     </div>
 
                     {/* Education */}
-                    <div className="tilt-card bg-[#fafafa] rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.1)] hover:bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Ausbildung</h3>
                         <div className="space-y-4">
-                            <div className="bg-white rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
                                 <h4 className="font-medium">Informatikmittelschule</h4>
                                 <p className="text-sm text-gray-600">Zürich</p>
                                 <div className="mt-2 flex items-center">
@@ -136,7 +136,7 @@ export default function AboutMe() {
                                     </span>
                                 </div>
                             </div>
-                            <div className="bg-white rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
                                 <h4 className="font-medium">Verschiedene Zertifikate</h4>
                                 <p className="text-sm text-gray-600">Online Kurse</p>
                                 <div className="mt-2 flex flex-wrap gap-2">
@@ -148,7 +148,7 @@ export default function AboutMe() {
                     </div>
 
                     {/* Interests */}
-                    <div className="tilt-card bg-[#fafafa] rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.1)] hover:bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Interessen</h3>
                         <div className="space-y-3">
                             {[
@@ -158,7 +158,7 @@ export default function AboutMe() {
                                 { name: 'Open Source', icon: '🔓', desc: 'Community Beiträge' }
                             ].map((interest) => (
                                 <div key={interest.name} 
-                                    className="bg-white rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+                                    className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
                                     <div className="flex items-center gap-2 mb-1">
                                         <span className="text-xl">{interest.icon}</span>
                                         <span className="font-medium">{interest.name}</span>
@@ -184,23 +184,20 @@ export default function AboutMe() {
 
             <style jsx global>{`
                 .tilt-card {
-                    transform-style: preserve-3d;
                     will-change: transform;
-                    backface-visibility: hidden;
                     animation: fadeIn 0.5s ease-out forwards;
                     opacity: 0;
                     position: relative;
-                    transform: perspective(2000px);
                 }
 
                 @keyframes fadeIn {
                     from {
                         opacity: 0;
-                        transform: perspective(2000px) translateY(20px);
+                        transform: translateY(20px);
                     }
                     to {
                         opacity: 1;
-                        transform: perspective(2000px) translateY(0);
+                        transform: translateY(0);
                     }
                 }
 
@@ -208,7 +205,6 @@ export default function AboutMe() {
                     animation: none;
                     opacity: 1;
                     transition: transform 0.1s ease-out;
-                    transform: perspective(2000px) rotateX(0deg) rotateY(0deg);
                 }
 
                 .tilt-card:nth-child(1) { animation-delay: 0.1s; }
@@ -216,10 +212,6 @@ export default function AboutMe() {
                 .tilt-card:nth-child(3) { animation-delay: 0.3s; }
                 .tilt-card:nth-child(4) { animation-delay: 0.4s; }
                 .tilt-card:nth-child(5) { animation-delay: 0.5s; }
-
-                .tilt-card > * {
-                    transform: translateZ(20px);
-                }
 
                 @keyframes float {
                     0%, 100% {
