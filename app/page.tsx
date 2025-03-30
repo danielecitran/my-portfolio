@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import AboutMe from '@/app/components/aboutMe';
+import AboutMe from './components/aboutMe';
 
 export default function Home() {
     const [showWave, setShowWave] = useState(false);
