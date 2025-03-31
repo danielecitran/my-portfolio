@@ -60,7 +60,7 @@ export default function AboutMe() {
                 {/* 2 KACHELN */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* PROFIL */}
-                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
                         <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 via-sky-500 to-sky-600 mb-6 relative transform hover:rotate-6 transition-all duration-300 shadow-lg">
                             <div className="absolute inset-0 flex items-center justify-center text-4xl animate-float">
                                 👨‍💻
@@ -78,7 +78,7 @@ export default function AboutMe() {
                     </div>
 
                     {/* ÜBER MICH */}
-                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
                         <h2 className="text-3xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Über mich</h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
@@ -89,7 +89,7 @@ export default function AboutMe() {
                         <div className="inline-block transform hover:scale-105 transition-transform duration-300">
                             <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full text-sm shadow-lg">
                                 <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-                                Offen für Praktika
+                                Offen für ein Praktikum
                             </span>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function AboutMe() {
                 {/* 3 KACHELN */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                     {/* TECHNOLOGIEN */}
-                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Technologien</h3>
                         <div className="grid grid-cols-2 gap-3">
                             {[
@@ -161,7 +161,7 @@ export default function AboutMe() {
                     </div>
 
                     {/* SCHULBILDUNG */}
-                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Schulbildung</h3>
                         <div className="space-y-4">
                             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
@@ -195,7 +195,7 @@ export default function AboutMe() {
                     </div>
 
                     {/* INTERESSEN */}
-                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] hover:bg-white shadow-[0_15px_35px_-12px_rgba(0,0,0,0.1)] border border-sky-100/50 backdrop-blur-sm">
+                    <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
                         <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 text-transparent bg-clip-text">Interessen</h3>
                         <div className="space-y-3">
                             {[
