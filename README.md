@@ -18,7 +18,7 @@ Eine moderne, responsive Portfolio-Website entwickelt mit Next.js
 
 1. Repository klonen:
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/danielecitran/my-portfolio.git
 ```
 
 2. Abhängigkeiten installieren:
