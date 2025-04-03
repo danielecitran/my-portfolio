@@ -14,7 +14,7 @@ Eine moderne, responsive Portfolio-Website entwickelt mit Next.js
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS Framework
 - [Geist Font](https://vercel.com/font) - Moderne Schriftart von Vercel
 
-## 📦 Installation
+## 📦 Lokale Installation
 
 1. Repository klonen:
 ```bash
