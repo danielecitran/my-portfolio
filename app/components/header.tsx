@@ -221,7 +221,7 @@ export default function Header({}: HeaderProps) {
               onClick={() => setIsMenuOpen(false)}
             >
               <div className="flex items-center gap-2 underline decoration-[1.5px] underline-offset-4">
-                <span>Github</span>
+                <span>GitHub</span>
                 <ExternalLinkIcon />
               </div>
             </a>

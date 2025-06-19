@@ -42,16 +42,14 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.96, filter: "blur(8px)" },
+  hidden: { opacity: 0, filter: "blur(12px)" },
   show: {
     opacity: 1,
-    y: 0,
-    scale: 1,
     filter: "blur(0px)",
     transition: {
       type: "spring",
-      stiffness: 60,
-      damping: 16,
+      stiffness: 120,
+      damping: 18,
       mass: 0.7,
     },
   },
@@ -70,12 +68,12 @@ export default function Projects() {
         <motion.div
           key={project.title}
           variants={cardVariants}
-          className="bg-white/70 dark:bg-neutral-900/70 backdrop-blur-xl rounded-3xl p-4 md:p-8 transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.13)] border border-sky-100/50 dark:border-neutral-800/60 group relative overflow-hidden"
+          className="bg-white/70 backdrop-blur-xl rounded-3xl p-4 md:p-8 transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.13)] border border-sky-100/50 group relative overflow-hidden"
         >
           {/* Glasmorphism Effekt */}
-          <div className="absolute inset-0 pointer-events-none z-0 bg-gradient-to-br from-sky-100/40 via-white/10 to-sky-200/10 dark:from-neutral-800/40 dark:via-neutral-900/10 dark:to-sky-900/10" />
+          <div className="absolute inset-0 pointer-events-none z-0 bg-gradient-to-br from-sky-100/40 via-white/10 to-sky-200/10" />
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <div className="aspect-video bg-gray-200 dark:bg-neutral-800 rounded-xl overflow-hidden shadow-lg">
+            <div className="aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-lg">
               <img
                 src={project.image}
                 alt={project.title}
@@ -85,17 +83,17 @@ export default function Projects() {
             </div>
             <div className="flex flex-col justify-between">
               <div>
-                <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-neutral-900 dark:text-white">
+                <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-neutral-900">
                   {project.title}
                 </h2>
-                <p className="text-gray-600 dark:text-neutral-300 text-sm md:text-base mb-3 md:mb-4">
+                <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 md:px-3 py-1 bg-sky-100/80 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-full text-xs md:text-sm font-medium"
+                      className="px-2 md:px-3 py-1 bg-sky-100/80 text-sky-700 rounded-full text-xs md:text-sm font-medium"
                     >
                       {tag}
                     </span>
