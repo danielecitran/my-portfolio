@@ -41,16 +41,40 @@ export default function AboutMe() {
       });
     };
 
-    // TIMER
-    const timer = setTimeout(() => {
+    // Prüfe, ob die Animation schon gezeigt wurde
+    const alreadyShown = sessionStorage.getItem("aboutMeAnimationShown");
+
+    if (alreadyShown) {
+      // Animation überspringen, sofort sichtbar machen
       cards.forEach((card) => {
         card.classList.add("animation-complete");
-
+        // Mouse-Events trotzdem aktivieren
         card.addEventListener("mousemove", (e: Event) =>
           handleMouseMove(e, card)
         );
         card.addEventListener("mouseleave", () => handleMouseLeave(card));
       });
+      return () => {
+        cards.forEach((card) => {
+          card.removeEventListener("mousemove", (e: Event) =>
+            handleMouseMove(e, card)
+          );
+          card.removeEventListener("mouseleave", () => handleMouseLeave(card));
+        });
+      };
+    }
+
+    // TIMER für Animation beim ersten Laden
+    const timer = setTimeout(() => {
+      cards.forEach((card) => {
+        card.classList.add("animation-complete");
+        card.addEventListener("mousemove", (e: Event) =>
+          handleMouseMove(e, card)
+        );
+        card.addEventListener("mouseleave", () => handleMouseLeave(card));
+      });
+      // Setze das Flag, damit Animation nicht nochmal kommt
+      sessionStorage.setItem("aboutMeAnimationShown", "true");
     }, 1000);
 
     // CLEANUP
@@ -101,10 +125,15 @@ export default function AboutMe() {
               Über mich
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Meine Leidenschaft ist die Entwicklung eleganter Lösungen für
-              komplexe Probleme.
+              Mich interessiert, wie digitale Systeme aufgebaut sind und wie man
+              sie effizient und verständlich gestalten kann. Besonders spannend
+              finde ich es, wenn aus einfachen Ideen durch saubere Umsetzung
+              funktionierende Anwendungen entstehen.
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">TEXT</p>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              In meiner erweitere ich ständig mein Wissen in Bereichen wie
+              Webentwicklung und Programmierung.
+            </p>
             <div className="inline-block transform hover:scale-105 transition-transform duration-300">
               <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full text-sm shadow-lg">
                 <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
