@@ -4,12 +4,20 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Project 1",
+    title: "RatingPulse",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "https://placehold.co/800x450",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
-    code: "#",
+      "RatingPulse ist eine Webanwendung zur Aggregation und Analyse von Kundenbewertungen aus Google Reviews. RatingPulse bietet auch KI-gestützte Einblicke (Sentiment-Analyse, Keywords) via OpenAI API.",
+    image: "/ratingpulse.png",
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Java Spring Boot",
+      "PostgreSQL",
+      "Node.js",
+      "OpenAI API",
+    ],
+    code: "https://github.com/danielecitran/RatingPulse",
     demo: "#",
   },
   {
@@ -107,6 +115,8 @@ export default function Projects() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   tabIndex={0}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     className="w-4 h-4 md:w-5 md:h-5"
