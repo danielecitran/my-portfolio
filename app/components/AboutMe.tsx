@@ -97,9 +97,14 @@ export default function AboutMe() {
           {/* PROFIL */}
           <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
             <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 via-sky-500 to-sky-600 mb-6 relative transform hover:rotate-6 transition-all duration-300 shadow-lg">
-              <div className="absolute inset-0 flex items-center justify-center text-4xl animate-float">
-                👨‍💻
-              </div>
+              <Image
+                src="/portfolio_daniele.png"
+                alt="Daniele Citran"
+                width={192}
+                height={192}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
             <h2 className="text-2xl font-semibold mb-2">Daniele Leon Citran</h2>
             <p className="text-gray-600 mb-4">Affoltern am Albis, Schweiz</p>
@@ -131,8 +136,8 @@ export default function AboutMe() {
               funktionierende Anwendungen entstehen.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              In meiner erweitere ich ständig mein Wissen in Bereichen wie
-              Webentwicklung und Programmierung.
+              Ausserhalb der Welt aus Bits und Bytes finde ich meinen Ausgleich
+              auf dem Motorrad und im Fitnessstudio.
             </p>
             <div className="inline-block transform hover:scale-105 transition-transform duration-300">
               <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full text-sm shadow-lg">
@@ -316,7 +321,7 @@ export default function AboutMe() {
             <div className="space-y-4">
               <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)] shadow-[0_4px_12px_-6px_rgba(0,0,0,0.05)] border border-sky-100/30">
                 <h4 className="font-medium">Informatikmittelschule</h4>
-                <p className="text-sm text-gray-600">Hottingen</p>
+                <p className="text-sm text-gray-600">Zürich</p>
                 <div className="mt-2 flex items-center">
                   <span className="text-xs bg-sky-100 text-sky-800 px-2 py-1 rounded-full border border-sky-200">
                     2023 - Heute
