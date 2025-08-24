@@ -11,6 +11,7 @@ Eine moderne, responsive Portfolio Webseite
 ## 🛠️ Technologien
 
 - [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Geist Font](https://vercel.com/font)
 
