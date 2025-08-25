@@ -1,15 +1,65 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const projects = [
   {
+    title: "NoteTrack",
+    description:
+      "Eine All-in-One Schulplattform für Schüler, um Prüfungen im Blick zu behalten und automatisch Noten zu tracken. Das Projekt ist im Rahmen eines Hackathons entstanden, bietet jedoch das Potenzial, in Zukunft weiterentwickelt und kommerziell eingesetzt zu werden.",
+    image: "/notetrack.png",
+    tags: ["Next.js", "TypeScipt", "Tailwind CSS", "Supabase"],
+    code: "https://github.com/danielecitran/NoteTrack",
+    demo: "https://note-track-deploy.vercel.app/",
+  },
+  {
+    title: "wordsauce | Online-Wörterspiel",
+    description:
+      "Ein interaktives Online-Wörterspiel, bei dem Spieler Wörter erraten müssen.",
+    image: "/wordsauce.png",
+    tags: [
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Socket.io",
+    ],
+    code: "https://github.com/danielecitran/wordsauce",
+    demo: "https://wordsauce.onrender.com/",
+  },
+  {
+    title: "devware Landingpage",
+    description: "Moderne Landingpage für devware.",
+    image: "/devware.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    code: "https://github.com/devware-ch/devware-landingpage",
+    demo: "https://devware-ch.netlify.app/",
+  },
+  {
+    title: "MT Performance Landingpage",
+    description: "Moderne Landingpage für einen Fiverr Kunden.",
+    image: "/mtperformance.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    code: "https://github.com/MT-Pages/MT-performance-Homepage",
+    demo: "https://mtperformance.netlify.app/",
+  },
+  {
+    title: "Umbau-Allrounder GmbH Webseite",
+    description: "Webseite für die Umbau-Allrounder GmbH.",
+    image: "/umbau-allrounder.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    code: "https://github.com/danielecitran/umbau-allrounder",
+    demo: "https://umbau-allrounder.ch/",
+  },
+  {
     title: "RatingPulse",
     description:
-      "RatingPulse ist eine Webanwendung zur Aggregation und Analyse von Kundenbewertungen aus Google Reviews. RatingPulse bietet auch KI-gestützte Einblicke (Sentiment-Analyse, Keywords) via OpenAI API.",
+      "Eine Webanwendung zur Aggregation und Analyse von Kundenbewertungen aus Google Reviews. RatingPulse bietet auch KI-gestützte Einblicke (Sentiment-Analyse, Keywords) via OpenAI API.",
     image: "/ratingpulse.png",
     tags: [
-      "React",
+      "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Java Spring Boot",
@@ -19,23 +69,20 @@ const projects = [
     ],
     code: "https://github.com/danielecitran/RatingPulse",
     demo: "#",
+    status: "in-development",
   },
   {
-    title: "Project 2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "https://placehold.co/800x450",
-    tags: ["Vue.js", "Nuxt.js", "SCSS", "Firebase", "Vuex"],
-    code: "#",
-    demo: "#",
-  },
-  {
-    title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "https://placehold.co/800x450",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    code: "#",
+    title: "Mensa App",
+    description: "Ein Schulprojekt am BZZ, durchgeführt mit Scrum.",
+    image: "/mensa-app.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Java Spring Boot",
+      "PostgreSQL",
+    ],
+    code: "https://github.com/MikolajKulig/I2b-Mensa-app",
     demo: "#",
   },
 ];
@@ -64,13 +111,20 @@ const cardVariants = {
 };
 
 export default function Projects() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Setze isVisible auf true nach dem Laden der Komponente
+    setIsVisible(true);
+  }, []);
+
   return (
     <motion.div
       className="space-y-8 md:space-y-12"
       variants={containerVariants}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
+      animate={isVisible ? "show" : "hidden"}
+      viewport={{ once: true, amount: 0.1 }}
     >
       {projects.map((project, idx) => (
         <motion.div
@@ -91,6 +145,14 @@ export default function Projects() {
             </div>
             <div className="flex flex-col justify-between">
               <div>
+                {project.status === "in-development" && (
+                  <div className="mb-2">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium border border-amber-200">
+                      <div className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></div>
+                      Nicht abgeschlossen
+                    </span>
+                  </div>
+                )}
                 <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-neutral-900">
                   {project.title}
                 </h2>
@@ -127,15 +189,19 @@ export default function Projects() {
                   </svg>
                   Code ansehen
                 </motion.a>
-                <motion.a
-                  href={project.demo}
-                  className="bg-gradient-to-r from-sky-400 to-sky-600 text-white px-4 md:px-6 py-2 rounded-full font-medium transform hover:scale-105 transition-all duration-300 hover:shadow-xl text-sm md:text-base text-center"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  tabIndex={0}
-                >
-                  Live Demo
-                </motion.a>
+                {project.demo && project.demo !== "#" && (
+                  <motion.a
+                    href={project.demo}
+                    className="bg-gradient-to-r from-sky-400 to-sky-600 text-white px-4 md:px-6 py-2 rounded-full font-medium transform hover:scale-105 transition-all duration-300 hover:shadow-xl text-sm md:text-base text-center"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    tabIndex={0}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </motion.a>
+                )}
               </div>
             </div>
           </div>

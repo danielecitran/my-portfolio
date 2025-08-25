@@ -160,12 +160,22 @@ export default function Home() {
               showTitleAnimation ? " animate-title" : ""
             }`}
           >
-            Hallo, ich bin{" "}
+            Grüezi, ich bin{" "}
             <span
-              className="inline-block bg-gradient-to-br from-sky-400 via-sky-400 to-sky-600 text-transparent bg-clip-text hover:from-sky-300 hover:via-sky-400 hover:to-sky-500 transition-all duration-500 hover:scale-105 transform cursor-pointer hover:-translate-y-1"
+              className="inline-block bg-gradient-to-br from-sky-400 via-sky-400 to-sky-600 text-transparent bg-clip-text hover:from-sky-300 hover:via-sky-400 hover:to-sky-500 transition-all duration-500 hover:scale-105 transform cursor-pointer hover:-translate-y-1 relative group"
               onClick={handleClick}
             >
               Daniele Citran
+              {/* Subtiler Hinweis auf Easter Egg */}
+              <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20">
+                <div className="bg-sky-900 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap shadow-xl border border-sky-700">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-sky-300 rounded-full animate-pulse"></span>
+                    <span className="font-medium">Klick mich! 👋</span>
+                  </div>
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-3 border-r-3 border-t-3 border-transparent border-t-sky-900"></div>
+                </div>
+              </div>
             </span>
             {showWave && <span className="absolute ml-2 animate-wave">👋</span>}
           </h1>
