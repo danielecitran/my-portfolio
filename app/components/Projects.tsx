@@ -12,6 +12,7 @@ const projects = [
     tags: ["Next.js", "TypeScipt", "Tailwind CSS", "Supabase"],
     code: "https://github.com/danielecitran/NoteTrack",
     demo: "https://note-track-deploy.vercel.app/",
+    achievement: '🏆 1. Platz beim "hackts?!" Hackathon',
   },
   {
     title: "wordsauce | Online-Wörterspiel",
@@ -159,6 +160,14 @@ export default function Projects() {
                 <p className="text-gray-600 text-sm md:text-base mb-3 md:mb-4">
                   {project.description}
                 </p>
+                {project.achievement && (
+                  <div className="mb-3 md:mb-4">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-400 to-orange-500 text-white rounded-full text-sm md:text-base font-bold shadow-lg">
+                      <span className="text-lg">🏆</span>
+                      {project.achievement.replace("🏆 ", "")}
+                    </span>
+                  </div>
+                )}
                 <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                   {project.tags.map((tag) => (
                     <span
