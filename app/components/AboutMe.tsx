@@ -104,7 +104,7 @@ export default function AboutMe() {
         {/* 2 KACHELN */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* PROFIL */}
-          <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
+          <div className="tilt-card bg-gradient-to-br from-white to-sky-50 rounded-3xl p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.25)] hover:bg-white shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-sky-100/50 backdrop-blur-sm">
             <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-sky-400 via-sky-500 to-sky-600 mb-6 relative transform hover:rotate-6 transition-all duration-300 shadow-lg">
               <Image
                 src="/portfolio_daniele.png"
@@ -119,7 +119,7 @@ export default function AboutMe() {
             <p className="text-gray-600 mb-4">Affoltern am Albis, Schweiz</p>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/danielecitran"
                 className="p-2 hover:text-sky-500 transition-colors duration-300"
               >
                 <svg
@@ -148,11 +148,16 @@ export default function AboutMe() {
               Ausserhalb der Welt aus Bits und Bytes finde ich meinen Ausgleich
               auf dem Motorrad, im Fitnessstudio und im Winter beim Skifahren.
             </p>
-            <div className="inline-block transform hover:scale-105 transition-transform duration-300">
-              <span className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-400 to-green-500 text-white rounded-full text-sm shadow-lg">
-                <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-                Offen für ein Praktikum
-              </span>
+
+            {/* Hackathon Achievement */}
+            <div className="mb-6 flex justify-center">
+              <Image
+                src="/hackathon.png"
+                alt="Hackathon Gewinn"
+                width={200}
+                height={200}
+                className="rounded-lg object-cover"
+              />
             </div>
           </div>
         </div>
