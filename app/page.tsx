@@ -184,7 +184,7 @@ export default function Home() {
               showTitleAnimation ? " animate-subtitle" : ""
             }`}
           >
-            Informatikmittelschüler an der IMS Hottingen
+            Informatikmittelschüler an der Kantonsschule Hottingen
           </h2>
         </div>
       </main>
