@@ -13,13 +13,14 @@ export default function ConditionalLayout({
 }: ConditionalLayoutProps) {
   const pathname = usePathname();
 
-  // Prüfe, ob wir auf der Datenschutz- oder AGB-Seite sind
+  // Prüfe, ob wir auf der ChartAI-Seite, Datenschutz- oder AGB-Seite sind
+  const isChartAIPage = pathname === "/chartai";
   const isDatenschutzPage = pathname === "/chartai/datenschutz";
   const isAGBPage = pathname === "/chartai/agb";
-  const isLegalPage = isDatenschutzPage || isAGBPage;
+  const isStandalonePage = isChartAIPage || isDatenschutzPage || isAGBPage;
 
-  if (isLegalPage) {
-    // Für Datenschutz- und AGB-Seiten: Kein Header/Footer
+  if (isStandalonePage) {
+    // Für ChartAI-Seiten: Kein Header/Footer
     return <>{children}</>;
   }
 

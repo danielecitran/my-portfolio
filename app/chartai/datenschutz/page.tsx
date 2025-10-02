@@ -1,49 +1,49 @@
 export default function DatenschutzPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12 max-w-4xl">
+        <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 px-2">
               ChartAI Datenschutzerklärung
             </h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-base sm:text-lg text-gray-600 px-2">
               ChartAI
               <br />
               Bereitgestellt von Daniele Citran
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 1. Verantwortlicher
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Verantwortlich für die Datenbearbeitung im Sinne des Schweizer
                   Datenschutzgesetzes (DSG) ist:
                 </p>
-                <div className="mt-4 pl-4">
-                  <p>Daniele Citran</p>
-                  <p>Pfruendhofstrasse 54</p>
-                  <p>8910 Affoltern am Albis</p>
-                  <p>Schweiz</p>
-                  <p>E-Mail: chartanalysisai@gmail.com</p>
+                <div className="mt-3 sm:mt-4 pl-2 sm:pl-4">
+                  <p className="text-sm sm:text-base">Daniele Citran</p>
+                  <p className="text-sm sm:text-base">Pfruendhofstrasse 54</p>
+                  <p className="text-sm sm:text-base">8910 Affoltern am Albis</p>
+                  <p className="text-sm sm:text-base">Schweiz</p>
+                  <p className="text-sm sm:text-base break-words">E-Mail: chartanalysisai@gmail.com</p>
                 </div>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 2. Erhebung und Bearbeitung personenbezogener Daten
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Wir bearbeiten personenbezogene Daten nur im erforderlichen
                   Umfang. Dazu gehören:
                 </p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-3 sm:mt-4 space-y-1 sm:space-y-2">
                   <li>
                     • Direkt erhobene Daten (z. B. E-Mail-Adresse bei
                     Support-Anfragen oder Kontoerstellung)
@@ -66,7 +66,7 @@ export default function DatenschutzPage() {
                   Absicherung unserer Dienste.
                 </p>
                 <p className="mt-4">Die Speicherung erfolgt sowohl:</p>
-                <ul className="mt-2 space-y-2">
+                <ul className="mt-2 sm:mt-2 space-y-1 sm:space-y-2">
                   <li>
                     • auf den Geräten der Endnutzer (z. B. lokal gespeicherte
                     Analysebilder oder Einstellungen), als auch
@@ -81,10 +81,10 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 3. Analyse- und Trackingtools
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Zur Nutzungsanalyse setzen wir ggf. Dienste wie Google
                   Analytics oder Firebase Analytics ein. Dabei werden
@@ -96,9 +96,9 @@ export default function DatenschutzPage() {
                   Einwilligung. Diese Einwilligung kann jederzeit mit Wirkung
                   für die Zukunft widerrufen werden.
                 </p>
-                <div className="mt-4 bg-gray-50 rounded-lg p-4">
-                  <p className="font-medium">Weitere Informationen:</p>
-                  <p>
+                <div className="mt-3 sm:mt-4 bg-gray-50 rounded-lg p-3 sm:p-4">
+                  <p className="font-medium text-sm sm:text-base">Weitere Informationen:</p>
+                  <p className="text-sm sm:text-base">
                     Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4,
                     Irland
                   </p>
@@ -106,7 +106,7 @@ export default function DatenschutzPage() {
                     Datenschutzerklärung:{" "}
                     <a
                       href="https://policies.google.com/privacy"
-                      className="text-blue-600 hover:text-blue-800 underline"
+                      className="text-blue-600 hover:text-blue-800 underline break-words"
                     >
                       https://policies.google.com/privacy
                     </a>
@@ -116,12 +116,12 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 4. Zwecke der Bearbeitung
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>Wir verwenden Ihre Daten zu folgenden Zwecken:</p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-3 sm:mt-4 space-y-1 sm:space-y-2">
                   <li>• Zur Bereitstellung und Verbesserung unserer App</li>
                   <li>• Zur Durchführung der Analysefunktionen</li>
                   <li>
@@ -137,12 +137,12 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 5. Weitergabe von Daten
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>Eine Weitergabe erfolgt nur:</p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-3 sm:mt-4 space-y-1 sm:space-y-2">
                   <li>• an Hosting- und Zahlungsdienstleister</li>
                   <li>
                     • an Analyse- und Trackinganbieter (nur mit Einwilligung)
@@ -152,9 +152,9 @@ export default function DatenschutzPage() {
                     • an externe Dienstleister zur Funktionsumsetzung, darunter:
                   </li>
                 </ul>
-                <div className="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                  <p className="font-medium text-yellow-800">OpenAI GPT</p>
-                  <p className="text-yellow-700">
+                <div className="mt-3 sm:mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 sm:p-4">
+                  <p className="font-medium text-yellow-800 text-sm sm:text-base">OpenAI GPT</p>
+                  <p className="text-yellow-700 text-sm sm:text-base">
                     Zweck: Analyse von Chartbildern und Verbesserung der
                     KI-Modelle (nur mit Einwilligung)
                   </p>
@@ -173,9 +173,9 @@ export default function DatenschutzPage() {
                     Grundlage geeigneter Garantien (Standardvertragsklauseln).
                   </p>
                 </div>
-                <div className="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                  <p className="font-medium text-yellow-800">Google Gemini</p>
-                  <p className="text-yellow-700">
+                <div className="mt-3 sm:mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 sm:p-4">
+                  <p className="font-medium text-yellow-800 text-sm sm:text-base">Google Gemini</p>
+                  <p className="text-yellow-700 text-sm sm:text-base">
                     Zweck: Analyse von Chartbildern und Verbesserung der
                     KI-Modelle (nur mit Einwilligung)
                   </p>
@@ -195,7 +195,7 @@ export default function DatenschutzPage() {
                   </p>
                 </div>
                 <p className="mt-4">Weitere Dienstleister:</p>
-                <ul className="mt-2 space-y-1">
+                <ul className="mt-2 sm:mt-2 space-y-1">
                   <li>• RevenueCat (Abonnementverwaltung)</li>
                   <li>• TikTok (Marketingoptimierung)</li>
                   <li>• Meta (Marketingoptimierung)</li>
@@ -209,10 +209,10 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 6. Cookies und ähnliche Technologien
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Unsere App und Website nutzen Cookies oder vergleichbare
                   Technologien zur Funktionsgewährleistung, Analyse und ggf.
@@ -223,10 +223,10 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 7. Speicherdauer
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Personenbezogene Daten werden nur so lange gespeichert, wie
                   dies für die Zwecke der Bearbeitung erforderlich ist oder wie
@@ -236,15 +236,15 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 8. Datenschutzrechte der Nutzer
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Sie haben im Rahmen des geltenden Schweizer
                   Datenschutzgesetzes folgende Rechte:
                 </p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-3 sm:mt-4 space-y-1 sm:space-y-2">
                   <li>• Auskunft über gespeicherte Daten</li>
                   <li>• Berichtigung unrichtiger Daten</li>
                   <li>• Löschung von Daten</li>
@@ -261,10 +261,10 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 9. Kinderschutz
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Unsere Dienste richten sich nicht an Kinder unter 13 Jahren.
                   Wir erfassen wissentlich keine Daten von Kindern ohne
@@ -274,10 +274,10 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 10. Marketing und Kommunikation
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Wenn Sie dem Empfang von Informationen zustimmen, können wir
                   Ihnen Updates oder Angebote senden. Sie können sich jederzeit
@@ -288,10 +288,10 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 11. Aktualisierungen der Datenschutzerklärung
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Diese Datenschutzerklärung kann aktualisiert werden. Die
                   jeweils aktuelle Version ist über unsere App oder Website
@@ -301,27 +301,27 @@ export default function DatenschutzPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
                 12. Kontakt
               </h2>
-              <div className="text-gray-600 leading-relaxed">
+              <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
                   Bei Fragen oder zur Ausübung Ihrer Rechte erreichen Sie uns
                   unter:
                 </p>
-                <div className="mt-4 pl-4">
-                  <p>Daniele Citran</p>
-                  <p>Pfruendhofstrasse 54</p>
-                  <p>8910 Affoltern am Albis</p>
-                  <p>Schweiz</p>
-                  <p>E-Mail: chartanalysisai@gmail.com</p>
+                <div className="mt-3 sm:mt-4 pl-2 sm:pl-4">
+                  <p className="text-sm sm:text-base">Daniele Citran</p>
+                  <p className="text-sm sm:text-base">Pfruendhofstrasse 54</p>
+                  <p className="text-sm sm:text-base">8910 Affoltern am Albis</p>
+                  <p className="text-sm sm:text-base">Schweiz</p>
+                  <p className="text-sm sm:text-base break-words">E-Mail: chartanalysisai@gmail.com</p>
                 </div>
               </div>
             </section>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <p className="text-sm text-gray-500 text-center">
+          <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
+            <p className="text-xs sm:text-sm text-gray-500 text-center">
               Stand: {new Date().toLocaleDateString("de-DE")}
             </p>
           </div>
