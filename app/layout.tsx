@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ConditionalLayout from "./components/ConditionalLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,9 +28,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <Header />
-        <main className="flex-grow pt-16 sm:pt-14">{children}</main>
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
