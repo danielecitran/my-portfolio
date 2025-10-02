@@ -22,13 +22,14 @@ export default function AGBPage() {
               <div className="text-gray-600 leading-relaxed">
                 <p>
                   Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die
-                  Nutzung der mobilen Applikation „ChartAI", bereitgestellt von
-                  Daniele Citran (nachfolgend „ich", „wir" oder „Anbieter"
-                  genannt). ChartAI bietet automatisierte Analysen von
-                  Trading-Charts anhand fotografierter oder hochgeladener Bilder
-                  (nachfolgend „Analyse"). Durch die Nutzung unserer Dienste
-                  erklären Sie sich mit diesen AGB sowie unserer
-                  Datenschutzerklärung einverstanden.
+                  Nutzung der mobilen Applikation &ldquo;ChartAI&rdquo;,
+                  bereitgestellt von Daniele Citran (nachfolgend
+                  &ldquo;ich&rdquo;, &ldquo;wir&rdquo; oder
+                  &ldquo;Anbieter&rdquo; genannt). ChartAI bietet automatisierte
+                  Analysen von Trading-Charts anhand fotografierter oder
+                  hochgeladener Bilder (nachfolgend &ldquo;Analyse&rdquo;).
+                  Durch die Nutzung unserer Dienste erklären Sie sich mit diesen
+                  AGB sowie unserer Datenschutzerklärung einverstanden.
                 </p>
               </div>
             </section>
@@ -78,9 +79,9 @@ export default function AGBPage() {
                   bereitgestellten Inhalte werden ohne Gewähr für
                   Vollständigkeit, Richtigkeit oder Genauigkeit angeboten. Wir
                   übernehmen keine Haftung für Verluste oder Schäden, die durch
-                  die Nutzung der App entstehen. Die App wird „wie besehen"
-                  bereitgestellt, ohne ausdrückliche oder stillschweigende
-                  Garantien.
+                  die Nutzung der App entstehen. Die App wird &ldquo;wie
+                  besehen&rdquo; bereitgestellt, ohne ausdrückliche oder
+                  stillschweigende Garantien.
                 </p>
               </div>
             </section>
