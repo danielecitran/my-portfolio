@@ -141,7 +141,7 @@ export default function ChartAIPage() {
             {/* Text Content */}
             <div className="text-white">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                Lade die ChartAI App noch heute herunter
+                Lade dir die ChartAI App noch heute herunter
               </h2>
               <p className="text-lg sm:text-xl text-green-100 mb-8 leading-relaxed">
                 Und spare hunderte Stunden manueller Analyse

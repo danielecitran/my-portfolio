@@ -8,8 +8,6 @@ export default function DatenschutzPage() {
               ChartAI Datenschutzerklärung
             </h1>
             <p className="text-base sm:text-lg text-gray-600 px-2">
-              ChartAI
-              <br />
               Bereitgestellt von Daniele Citran
             </p>
           </div>
@@ -27,9 +25,13 @@ export default function DatenschutzPage() {
                 <div className="mt-3 sm:mt-4 pl-2 sm:pl-4">
                   <p className="text-sm sm:text-base">Daniele Citran</p>
                   <p className="text-sm sm:text-base">Pfruendhofstrasse 54</p>
-                  <p className="text-sm sm:text-base">8910 Affoltern am Albis</p>
+                  <p className="text-sm sm:text-base">
+                    8910 Affoltern am Albis
+                  </p>
                   <p className="text-sm sm:text-base">Schweiz</p>
-                  <p className="text-sm sm:text-base break-words">E-Mail: chartanalysisai@gmail.com</p>
+                  <p className="text-sm sm:text-base break-words">
+                    E-Mail: chartanalysisai@gmail.com
+                  </p>
                 </div>
               </div>
             </section>
@@ -97,7 +99,9 @@ export default function DatenschutzPage() {
                   für die Zukunft widerrufen werden.
                 </p>
                 <div className="mt-3 sm:mt-4 bg-gray-50 rounded-lg p-3 sm:p-4">
-                  <p className="font-medium text-sm sm:text-base">Weitere Informationen:</p>
+                  <p className="font-medium text-sm sm:text-base">
+                    Weitere Informationen:
+                  </p>
                   <p className="text-sm sm:text-base">
                     Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4,
                     Irland
@@ -153,7 +157,9 @@ export default function DatenschutzPage() {
                   </li>
                 </ul>
                 <div className="mt-3 sm:mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 sm:p-4">
-                  <p className="font-medium text-yellow-800 text-sm sm:text-base">OpenAI GPT</p>
+                  <p className="font-medium text-yellow-800 text-sm sm:text-base">
+                    OpenAI GPT
+                  </p>
                   <p className="text-yellow-700 text-sm sm:text-base">
                     Zweck: Analyse von Chartbildern und Verbesserung der
                     KI-Modelle (nur mit Einwilligung)
@@ -163,7 +169,7 @@ export default function DatenschutzPage() {
                     Identifizierung möglich)
                   </p>
                   <p className="text-yellow-700 mt-2">
-                    <strong>Hinweis:</strong> Bitte laden Sie ausschließlich
+                    <strong>Hinweis:</strong> Bitte laden Sie ausschliesslich
                     Chartbilder hoch. Sollten versehentlich personenbezogene
                     Inhalte enthalten sein, können diese ebenfalls an OpenAI
                     übermittelt werden.
@@ -174,7 +180,9 @@ export default function DatenschutzPage() {
                   </p>
                 </div>
                 <div className="mt-3 sm:mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 sm:p-4">
-                  <p className="font-medium text-yellow-800 text-sm sm:text-base">Google Gemini</p>
+                  <p className="font-medium text-yellow-800 text-sm sm:text-base">
+                    Google Gemini
+                  </p>
                   <p className="text-yellow-700 text-sm sm:text-base">
                     Zweck: Analyse von Chartbildern und Verbesserung der
                     KI-Modelle (nur mit Einwilligung)
@@ -184,7 +192,7 @@ export default function DatenschutzPage() {
                     Identifizierung möglich)
                   </p>
                   <p className="text-yellow-700 mt-2">
-                    <strong>Hinweis:</strong> Bitte laden Sie ausschließlich
+                    <strong>Hinweis:</strong> Bitte laden Sie ausschliesslich
                     Chartbilder hoch. Sollten versehentlich personenbezogene
                     Inhalte enthalten sein, können diese ebenfalls an OpenAI
                     übermittelt werden.
@@ -201,7 +209,7 @@ export default function DatenschutzPage() {
                   <li>• Meta (Marketingoptimierung)</li>
                 </ul>
                 <p className="mt-4">
-                  Einige dieser Anbieter befinden sich außerhalb der Schweiz
+                  Einige dieser Anbieter befinden sich ausserhalb der Schweiz
                   bzw. EU. Die Datenübermittlung erfolgt nur unter
                   Sicherstellung eines angemessenen Datenschutzniveaus.
                 </p>
@@ -312,9 +320,14 @@ export default function DatenschutzPage() {
                 <div className="mt-3 sm:mt-4 pl-2 sm:pl-4">
                   <p className="text-sm sm:text-base">Daniele Citran</p>
                   <p className="text-sm sm:text-base">Pfruendhofstrasse 54</p>
-                  <p className="text-sm sm:text-base">8910 Affoltern am Albis</p>
+                  <p className="text-sm sm:text-base">
+                    8910 Affoltern am Albis
+                  </p>
                   <p className="text-sm sm:text-base">Schweiz</p>
-                  <p className="text-sm sm:text-base break-words">E-Mail: chartanalysisai@gmail.com</p>
+                  <br />
+                  <p className="text-sm sm:text-base break-words">
+                    E-Mail: chartanalysisai@gmail.com
+                  </p>
                 </div>
               </div>
             </section>
