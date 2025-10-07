@@ -179,7 +179,7 @@ export default function AGBPage() {
                   <p className="text-blue-700 text-sm sm:text-base">
                     Zur fairen Nutzung des Dienstes behalten wir uns vor, die
                     Anzahl der monatlich durchführbaren Chartanalysen pro Nutzer
-                    auf maximal 300 Analysen zu beschränken. Bei Überschreitung
+                    auf maximal 100 Analysen zu beschränken. Bei Überschreitung
                     dieser Grenze kann der Zugriff auf weitere Analysen bis auf
                     Weiteres eingeschränkt werden.
                   </p>
