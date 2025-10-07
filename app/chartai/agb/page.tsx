@@ -8,8 +8,6 @@ export default function AGBPage() {
               ChartAI: Allgemeine Geschäftsbedingungen (AGB)
             </h1>
             <p className="text-base sm:text-lg text-gray-600 px-2">
-              ChartAI
-              <br />
               Bereitgestellt von Daniele Citran
             </p>
           </div>
@@ -24,7 +22,7 @@ export default function AGBPage() {
                   Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die
                   Nutzung der mobilen Applikation &ldquo;ChartAI&rdquo;,
                   bereitgestellt von Daniele Citran (nachfolgend
-                  &ldquo;ich&rdquo;, &ldquo;wir&rdquo; oder
+                  &ldquo;ich&rdquo;, &ldquo;wir&rdquo;, &ldquo;uns&rdquo; oder
                   &ldquo;Anbieter&rdquo; genannt). ChartAI bietet automatisierte
                   Analysen von Trading-Charts anhand fotografierter oder
                   hochgeladener Bilder (nachfolgend &ldquo;Analyse&rdquo;).
@@ -55,12 +53,14 @@ export default function AGBPage() {
               </h2>
               <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <div className="bg-red-50 border-l-4 border-red-400 p-3 sm:p-4 mb-3 sm:mb-4">
-                  <p className="font-medium text-red-800 text-sm sm:text-base">Wichtiger Hinweis</p>
+                  <p className="font-medium text-red-800 text-sm sm:text-base">
+                    Wichtiger Hinweis
+                  </p>
                   <p className="text-red-700 text-sm sm:text-base">
                     Die durch ChartAI bereitgestellten Analysen und
                     Informationen stellen keine Finanz-, Anlage- oder
                     Handelsempfehlungen dar. Die Ergebnisse basieren auf
-                    KI-gestützten Algorithmen und dienen ausschließlich
+                    KI-gestützten Algorithmen und dienen ausschliesslich
                     Informationszwecken. Für finanzielle Entscheidungen sind
                     stets eigene Recherchen sowie gegebenenfalls die Beratung
                     durch zugelassene Finanzexperten erforderlich.
@@ -126,7 +126,7 @@ export default function AGBPage() {
                   Store. Abonnements können jederzeit bis 24 Stunden vor Ablauf
                   des aktuellen Zeitraums gekündigt werden. Bei Kündigung endet
                   der Zugang zu Premium-Funktionen mit Ablauf des bezahlten
-                  Zeitraums. Rückerstattungen erfolgen ausschließlich über den
+                  Zeitraums. Rückerstattungen erfolgen ausschliesslich über den
                   App Store Anbieter.
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function AGBPage() {
               </h2>
               <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <p>
-                  Wir verarbeiten personenbezogene Daten gemäß den geltenden
+                  Wir verarbeiten personenbezogene Daten gemäss den geltenden
                   Datenschutzgesetzen (insb. DSG). Einzelheiten können Sie
                   unserer Datenschutzerklärung entnehmen.
                 </p>
@@ -163,7 +163,7 @@ export default function AGBPage() {
                   Alle Inhalte, Marken, Logos und Softwarekomponenten innerhalb
                   der App sind urheberrechtlich oder anderweitig geschützt. Die
                   Nutzung dieser Inhalte ist nur im Rahmen der App gestattet.
-                  Bei mutmaßlichen Rechtsverletzungen durch Inhalte oder
+                  Bei mutmasslichen Rechtsverletzungen durch Inhalte oder
                   Analysen der App bitten wir um umgehende Kontaktaufnahme.
                 </p>
               </div>
@@ -175,7 +175,9 @@ export default function AGBPage() {
               </h2>
               <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 <div className="bg-blue-50 border-l-4 border-blue-400 p-3 sm:p-4">
-                  <p className="font-medium text-blue-800 text-sm sm:text-base">Fair Use Policy</p>
+                  <p className="font-medium text-blue-800 text-sm sm:text-base">
+                    Fair Use Policy
+                  </p>
                   <p className="text-blue-700 text-sm sm:text-base">
                     Zur fairen Nutzung des Dienstes behalten wir uns vor, die
                     Anzahl der monatlich durchführbaren Chartanalysen pro Nutzer
@@ -251,7 +253,9 @@ export default function AGBPage() {
                 <p>Bei Fragen zu diesen AGB erreichen Sie uns unter:</p>
                 <div className="mt-3 sm:mt-4 pl-2 sm:pl-4">
                   <p className="text-sm sm:text-base">Daniele Citran</p>
-                  <p className="text-sm sm:text-base break-words">E-Mail: chartanalysisai@gmail.com</p>
+                  <p className="text-sm sm:text-base break-words">
+                    E-Mail: chartanalysisai@gmail.com
+                  </p>
                 </div>
               </div>
             </section>
